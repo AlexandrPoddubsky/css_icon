@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>bounce</title>
+	<style>
+		.bounce{
+			width: 15em;
+			height: 15em;
+			border: 1px solid;
+			border-radius: 50%;
+			background : radial-gradient(top left, #EEE, #333 60%);
+			background : -o-radial-gradient(top left, #EEE, #333 60%);
+			background : -ms-radial-gradient(top left, #EEE, #333 60%);
+			background : -moz-radial-gradient(top left, #EEE, #333 60%);
+			background : -webkit-radial-gradient(top left, #EEE, #333 60%);
+			box-shadow : 0 10em 10em #aaa;   
+			animation : bounce 0.5s cubic-bezier(0.3,0.6,1,0.5) alternate infinite;
+		  -o-animation : bounce 0.5s cubic-bezier(0.3,0.6,1,0.5) alternate infinite;
+		  -ms-animation : bounce 0.5s cubic-bezier(0.3,0.6,1,0.5) alternate infinite;
+		  -moz-animation : bounce 0.5s cubic-bezier(0.3,0.6,1,0.5) alternate infinite;
+		  -webkit-animation : bounce 0.5s cubic-bezier(0.3,0.6,1,0.5) alternate infinite;
+		}
+		@keyframes bounce{
+			60%{
+			    bottom : 5em;
+			    height : 15em;
+			    width : 15em;
+			    box-shadow : 0 5em 6em #CCC;
+			  }
+			  to{
+			    bottom : 0;
+			    height : 10em;
+			    width : 19em;
+			    box-shadow : 0 6em 7em #CCC;
+  }
+		}
+	</style>
+</head>
+<body>
+	<div class="bounce"></div>
+</body>
+</html>
